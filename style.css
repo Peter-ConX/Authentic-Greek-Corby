@@ -1578,3 +1578,183 @@ address { font-style: normal; }
   transition: top 0.2s;
 }
 .skip-link:focus { top: 0; }
+
+/* =====================================================
+   ADDITIONS — Menu, Reviews, Rating badge
+   ===================================================== */
+
+/* ─── RATING BADGE (hero) ────────────────────────── */
+.rating-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(247,241,229,0.12);
+  border: 1px solid rgba(247,241,229,0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 100px;
+  padding: 0.45rem 1rem;
+  margin-bottom: 1.5rem;
+  transition: background var(--transition);
+  text-decoration: none;
+}
+.rating-badge:hover { background: rgba(247,241,229,0.2); }
+.rating-stars { color: #E8A838; font-size: 0.85rem; letter-spacing: 0.05em; }
+.rating-score { font-size: 0.85rem; font-weight: 700; color: var(--cream); }
+.rating-sep  { color: rgba(247,241,229,0.4); }
+.rating-count { font-size: 0.72rem; color: rgba(247,241,229,0.65); }
+
+/* ─── MENU REDESIGN ──────────────────────────────── */
+.menu-block {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 0 3rem;
+  padding: 2.5rem 0;
+  border-top: 1px solid rgba(18,59,74,0.1);
+}
+.menu-block:first-of-type { border-top: none; }
+.menu-block-label { padding-top: 0.25rem; }
+.menu-block-label h3 {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--blue);
+  line-height: 1.15;
+}
+.menu-items { display: flex; flex-direction: column; }
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid rgba(18,59,74,0.07);
+}
+.menu-item:last-child { border-bottom: none; }
+.menu-item-info { flex: 1; }
+.menu-item-name {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--charcoal);
+  margin-bottom: 0.3rem;
+}
+.menu-item-desc { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; }
+.menu-item-price {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--olive);
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+/* Diet badges */
+.diet-badge {
+  display: inline-block;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.55rem;
+  border-radius: 100px;
+}
+.diet-badge--vegan { background: rgba(101,112,74,0.12); color: var(--olive); border: 1px solid rgba(101,112,74,0.3); }
+.diet-badge--veg   { background: rgba(101,112,74,0.08); color: var(--olive); border: 1px solid rgba(101,112,74,0.2); }
+.diet-badge--sig   { background: rgba(184,106,75,0.1); color: var(--terracotta); border: 1px solid rgba(184,106,75,0.25); }
+
+.menu-disclaimer {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-style: italic;
+  text-align: center;
+  margin: 1.5rem 0 2rem;
+}
+
+/* ─── LOCATION RATING ROW ────────────────────────── */
+.location-rating-row { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1rem; flex-wrap: wrap; }
+.location-stars { color: #E8A838; font-size: 1rem; }
+.location-rating-score { font-weight: 800; font-size: 1.1rem; color: var(--charcoal); }
+.location-review-count { font-size: 0.82rem; color: var(--text-muted); text-decoration: underline; text-underline-offset: 3px; }
+.location-review-count:hover { color: var(--terracotta); }
+
+/* ─── REVIEWS AGGREGATE ──────────────────────────── */
+.reviews-aggregate { display: flex; align-items: center; justify-content: center; gap: 0.6rem; margin-top: 0.75rem; }
+.agg-stars { color: #E8A838; font-size: 1.2rem; }
+.agg-score { font-size: 1.4rem; font-weight: 800; color: var(--blue); }
+.agg-meta  { font-size: 0.82rem; color: var(--text-muted); }
+
+/* ─── REVIEWS GRID REDESIGN ──────────────────────── */
+.reviews-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-bottom: 2.5rem; }
+.review-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 2rem;
+  border: 1px solid rgba(18,59,74,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+.review-card:hover { box-shadow: 0 8px 32px rgba(18,59,74,0.1); transform: translateY(-2px); }
+.review-header { display: flex; align-items: center; gap: 0.85rem; }
+.review-avatar {
+  width: 40px; height: 40px; border-radius: 50%;
+  background: var(--blue); color: var(--cream);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 1rem; flex-shrink: 0;
+}
+.review-meta { flex: 1; }
+.review-name { display: block; font-weight: 700; font-size: 0.92rem; color: var(--charcoal); font-style: normal; }
+.review-guide { font-size: 0.72rem; color: var(--text-muted); }
+.review-stars { color: #E8A838; font-size: 0.9rem; letter-spacing: 0.05em; }
+.review-card blockquote p {
+  font-family: var(--font-serif);
+  font-size: 1.05rem; font-style: italic;
+  line-height: 1.7; color: var(--text-body);
+}
+.review-footer {
+  display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+  margin-top: auto; padding-top: 0.75rem;
+  border-top: 1px solid rgba(18,59,74,0.06);
+}
+.review-footer time { font-size: 0.75rem; color: var(--text-muted); }
+.review-source {
+  display: inline-flex; align-items: center; gap: 0.35rem;
+  font-size: 0.72rem; font-weight: 600; color: var(--text-muted);
+  text-decoration: none; transition: color var(--transition);
+}
+.review-source:hover { color: var(--terracotta); }
+
+/* ─── REVIEWS CTA ────────────────────────────────── */
+.reviews-cta { text-align: center; }
+.btn-outline-dark {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.75rem 1.75rem; border-radius: var(--radius);
+  font-family: var(--font-sans); font-size: 0.85rem;
+  font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+  background: transparent; color: var(--blue); border: 1.5px solid var(--blue);
+  transition: var(--transition);
+}
+.btn-outline-dark:hover { background: var(--blue); color: var(--cream); }
+.btn-outline-dark:focus-visible { outline: 3px solid var(--terracotta); outline-offset: 3px; }
+
+/* ─── FOOTER RATING ──────────────────────────────── */
+.footer-rating { display: flex; align-items: center; gap: 0.5rem; margin-top: 1rem; font-size: 0.8rem; color: rgba(247,241,229,0.5); }
+.footer-stars { color: #E8A838; font-size: 0.85rem; }
+.footer-reviews-link { display: block; margin-top: 0.75rem; font-size: 0.78rem; color: rgba(247,241,229,0.45); transition: color var(--transition); }
+.footer-reviews-link:hover { color: var(--terracotta); }
+
+/* ─── VISIT TEXT LINKS (light on dark) ───────────── */
+.text-link-light { color: rgba(247,241,229,0.75); text-decoration: underline; text-underline-offset: 3px; transition: color var(--transition); }
+.text-link-light:hover { color: var(--cream); }
+
+/* ─── RESPONSIVE: menu & reviews ────────────────── */
+@media (max-width: 768px) {
+  .reviews-grid { grid-template-columns: 1fr; }
+  .menu-block { grid-template-columns: 1fr; gap: 1rem; }
+}

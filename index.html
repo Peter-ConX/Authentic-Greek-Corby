@@ -1,948 +1,661 @@
 <!DOCTYPE html>
-<html lang="en-GB" class="scroll-smooth">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gentlemen's Corner Barber Shop | White Rose, Leeds</title>
-  <meta name="description" content="Gentlemen's Corner Barber Shop at White Rose Shopping Centre Bus Station, Leeds LS11 8LU. Contact +44 7537 896328." />
-  <meta name="keywords" content="Gentlemen's Corner Barber Shop, Barber Leeds, Barbershop Leeds, Barber White Rose, Men's haircut Leeds, Barber near White Rose Shopping Centre, Barber LS11, White Rose barber" />
+  <title>Authentic Greek Corby | Greek Food in Corby</title>
+  <meta name="description" content="Discover Authentic Greek in Corby. Located on Oakley Road, Corby NN17 1NA. Call +44 7735 425039 for enquiries." />
+  <meta name="keywords" content="Authentic Greek Corby, Greek food Corby, Greek restaurant Corby, Greek takeaway Corby, Greek food near me, Oakley Road Corby, gyros Corby" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://gentlemens-corner-barber.co.uk/" />
-
   <!-- Open Graph -->
+  <meta property="og:title" content="Authentic Greek Corby | Greek Food in Corby" />
+  <meta property="og:description" content="Authentic Greek food in Corby. Find us on Oakley Road, Corby NN17 1NA." />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Gentlemen's Corner Barber Shop | White Rose, Leeds" />
-  <meta property="og:description" content="Modern barbering and men's grooming at White Rose Shopping Centre Bus Station, Leeds LS11 8LU. Call +44 7537 896328." />
-  <meta property="og:locale" content="en_GB" />
-
-  <!-- Google Fonts: Oswald (Display) + Plus Jakarta Sans (Body) + Cormorant Garamond (Editorial Accent) -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: "#FFFFFF",
-            surface: "#F9F8F6",
-            "surface-card": "#FFFFFF",
-            "surface-border": "#E2DFD8",
-            "text-main": "#0A0A0A",
-            "text-muted": "#555555",
-            gold: "#9E7B27",
-            "gold-hover": "#84651D",
-            "gold-light": "#FAF5EA",
-            dark: "#141414",
-            "dark-hover": "#262626",
-          },
-          fontFamily: {
-            display: ['"Oswald"', 'sans-serif'],
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-            serif: ['"Cormorant Garamond"', 'serif'],
-          }
-        }
-      }
-    };
-  </script>
-
-  <style>
-    *, *::before, *::after { box-sizing: border-box; }
-    body { font-family: "Plus Jakarta Sans", system-ui, sans-serif; background-color: #FFFFFF; color: #0A0A0A; }
-    h1, h2, h3, h4, .font-display { font-family: "Oswald", sans-serif; }
-
-    .hover-zoom {
-      transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .hover-zoom:hover {
-      transform: scale(1.03);
-    }
-
-    :focus-visible {
-      outline: 2px solid #9E7B27;
-      outline-offset: 2px;
-    }
-  </style>
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BarberShop",
-    "name": "Gentlemen's Corner Barber Shop",
-    "description": "Modern barbering and men's grooming at White Rose Shopping Centre Bus Station, Leeds.",
-    "telephone": "+447537896328",
-    "url": "https://gentlemens-corner-barber.co.uk/",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "White Rose Shopping Centre Bus Station",
-      "addressLocality": "Leeds",
-      "addressRegion": "West Yorkshire",
-      "postalCode": "LS11 8LU",
-      "addressCountry": "GB"
-    },
-    "sameAs": [
-      "https://www.facebook.com/gentlemenscorner.barber/"
-    ]
-  }
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+<body>
 
-<body class="bg-primary text-text-main antialiased selection:bg-gold selection:text-white">
-
-  <!-- ==========================================
+  <!-- ═══════════════════════════════════════
        01 — STICKY HEADER
-  =========================================== -->
-  <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-surface-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between gap-4">
-      
-      <!-- Brand Logo -->
-      <a href="#top" class="flex items-center gap-3.5 group shrink-0" aria-label="Gentlemen's Corner Barber Shop Home">
-        <div class="w-10 h-10 rounded-sm border border-gold bg-dark flex items-center justify-center text-gold font-display text-base font-bold tracking-widest group-hover:bg-gold group-hover:text-dark transition-colors">
-          GC
-        </div>
-        <div class="flex flex-col">
-          <span class="font-display text-lg sm:text-xl tracking-[0.15em] text-text-main uppercase leading-none group-hover:text-gold transition-colors">
-            GENTLEMEN'S CORNER
-          </span>
-          <span class="text-[10px] font-sans tracking-[0.25em] text-text-muted uppercase mt-1">
-            BARBER SHOP &bull; WHITE ROSE LEEDS
-          </span>
-        </div>
+  ═══════════════════════════════════════ -->
+  <header class="site-header" id="site-header" role="banner">
+    <div class="header-inner">
+      <!-- Wordmark -->
+      <a href="#hero" class="wordmark" aria-label="Authentic Greek Corby — home">
+        <span class="wordmark-primary">Authentic Greek</span>
+        <span class="wordmark-divider">/</span>
+        <span class="wordmark-location">Corby</span>
       </a>
 
-      <!-- Desktop Navigation Links -->
-      <nav class="hidden lg:flex items-center gap-6 font-sans text-xs font-semibold tracking-[0.18em] text-text-main uppercase" aria-label="Desktop Navigation">
-        <a href="#top" class="hover:text-gold transition-colors py-1 border-b border-transparent hover:border-gold">HOME</a>
-        <a href="#services" class="hover:text-gold transition-colors py-1 border-b border-transparent hover:border-gold">SERVICES</a>
-        <a href="#detail" class="hover:text-gold transition-colors py-1 border-b border-transparent hover:border-gold">THE CUTS</a>
-        <a href="#about" class="hover:text-gold transition-colors py-1 border-b border-transparent hover:border-gold">ABOUT</a>
-        <a href="#gallery" class="hover:text-gold transition-colors py-1 border-b border-transparent hover:border-gold">GALLERY</a>
-        <a href="#contact" class="hover:text-gold transition-colors py-1 border-b border-transparent hover:border-gold">CONTACT</a>
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#visit">Visit Us</a></li>
+        </ul>
       </nav>
 
-      <!-- Action Buttons -->
-      <div class="flex items-center gap-3 shrink-0">
-        <a href="tel:+447537896328" class="inline-flex items-center gap-2 bg-dark hover:bg-gold text-white hover:text-dark font-sans font-bold text-xs uppercase tracking-widest px-4 py-2.5 rounded-sm shadow-sm transition-all">
-          <!-- Lucide Phone -->
-          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.81-.81a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16z"/></svg>
-          <span>CALL NOW</span>
+      <!-- CTA -->
+      <div class="header-cta">
+        <a href="tel:+447735425039" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Call Now
         </a>
-        <a href="https://www.google.com/maps/search/?api=1&query=Gentlemen%27s+Corner+Barber+Shop+White+Rose+Shopping+Centre+Bus+Station+Leeds+LS11+8LU" target="_blank" rel="noopener noreferrer" class="hidden xl:inline-flex items-center gap-1.5 border border-surface-border hover:border-dark text-text-main px-3.5 py-2.5 rounded-sm text-xs font-sans tracking-wider uppercase transition-all bg-surface">
-          <!-- Lucide Navigation -->
-          <svg class="w-3.5 h-3.5 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
-          <span>GET DIRECTIONS</span>
-        </a>
-
-        <!-- Mobile Menu Toggle Button -->
-        <button id="mobile-menu-btn" type="button" class="lg:hidden p-2 text-text-main hover:text-gold" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
-          <!-- Lucide Menu -->
-          <svg id="menu-icon" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
-          <!-- Lucide X -->
-          <svg id="close-icon" class="w-6 h-6 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-        </button>
+        <a href="https://www.google.com/maps/search/?api=1&query=Authentic+Greek+Corby+Oakley+Rd+Corby+NN17+1NA" target="_blank" rel="noopener" class="btn btn-outline">Directions</a>
       </div>
+
+      <!-- Burger -->
+      <button class="burger-btn" id="burger-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
 
-    <!-- Mobile Dropdown Navigation -->
-    <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-surface-border px-6 py-6 space-y-4">
-      <a href="#top" class="mobile-nav-link block font-display text-xl tracking-widest text-text-main uppercase hover:text-gold">Home</a>
-      <a href="#services" class="mobile-nav-link block font-display text-xl tracking-widest text-text-main uppercase hover:text-gold">Services</a>
-      <a href="#detail" class="mobile-nav-link block font-display text-xl tracking-widest text-text-main uppercase hover:text-gold">The Cuts</a>
-      <a href="#about" class="mobile-nav-link block font-display text-xl tracking-widest text-text-main uppercase hover:text-gold">About</a>
-      <a href="#gallery" class="mobile-nav-link block font-display text-xl tracking-widest text-text-main uppercase hover:text-gold">Gallery</a>
-      <a href="#contact" class="mobile-nav-link block font-display text-xl tracking-widest text-text-main uppercase hover:text-gold">Contact</a>
-      <div class="pt-4 border-t border-surface-border flex flex-col gap-3">
-        <a href="tel:+447537896328" class="w-full text-center bg-dark text-white font-sans font-bold py-3 rounded-sm text-xs tracking-widest uppercase">
-          CALL BENCH: +44 7537 896328
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation" hidden>
+      <nav aria-label="Mobile navigation">
+        <ul>
+          <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+          <li><a href="#menu" class="mobile-nav-link">Menu</a></li>
+          <li><a href="#story" class="mobile-nav-link">Our Story</a></li>
+          <li><a href="#gallery" class="mobile-nav-link">Gallery</a></li>
+          <li><a href="#visit" class="mobile-nav-link">Visit Us</a></li>
+        </ul>
+        <a href="tel:+447735425039" class="mobile-call-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Call Now — +44 7735 425039
         </a>
-        <a href="https://www.google.com/maps/search/?api=1&query=Gentlemen%27s+Corner+Barber+Shop+White+Rose+Shopping+Centre+Bus+Station+Leeds+LS11+8LU" target="_blank" rel="noopener noreferrer" class="w-full text-center border border-surface-border text-text-main py-3 rounded-sm text-xs tracking-widest uppercase">
-          GET DIRECTIONS
-        </a>
-      </div>
+      </nav>
     </div>
   </header>
 
+  <main>
 
-  <!-- ==========================================
-       02 — HERO SECTION (FEATURING EMPTY SALON IMAGE)
-  =========================================== -->
-  <section id="top" class="relative pt-24 pb-16 lg:py-24 bg-surface border-b border-surface-border overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+    <!-- ═══════════════════════════════════════
+         02 — HERO
+    ═══════════════════════════════════════ -->
+    <section class="hero" id="hero" aria-label="Hero">
+      <!-- Background image -->
+      <div class="hero-bg" aria-hidden="true">
+        <img src="images/gyros-2.png" alt="" class="hero-bg-img" />
+        <div class="hero-overlay"></div>
+      </div>
 
-        <!-- Left Column: Copy & Actions -->
-        <div class="lg:col-span-6 flex flex-col items-start text-left">
-          
-          <!-- Eyebrow Badge -->
-          <div class="inline-flex items-center gap-2 bg-gold-light border border-gold/40 px-3.5 py-1.5 rounded-full mb-6">
-            <span class="w-2 h-2 rounded-full bg-gold animate-pulse"></span>
-            <span class="text-xs font-sans font-bold tracking-[0.2em] text-gold uppercase">LEEDS &bull; WHITE ROSE SHOPPING CENTRE</span>
-          </div>
+      <!-- Decorative line art -->
+      <svg class="deco-olive deco-olive--hero" viewBox="0 0 80 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M40 110 C40 110 40 60 40 10" stroke="rgba(247,241,229,0.35)" stroke-width="1.5" stroke-linecap="round"/>
+        <ellipse cx="28" cy="55" rx="12" ry="7" transform="rotate(-30 28 55)" fill="none" stroke="rgba(247,241,229,0.3)" stroke-width="1.2"/>
+        <ellipse cx="52" cy="42" rx="12" ry="7" transform="rotate(25 52 42)" fill="none" stroke="rgba(247,241,229,0.3)" stroke-width="1.2"/>
+        <ellipse cx="30" cy="30" rx="10" ry="6" transform="rotate(-20 30 30)" fill="none" stroke="rgba(247,241,229,0.25)" stroke-width="1.2"/>
+        <ellipse cx="50" cy="68" rx="11" ry="6" transform="rotate(35 50 68)" fill="none" stroke="rgba(247,241,229,0.25)" stroke-width="1.2"/>
+      </svg>
 
-          <!-- Main Headline -->
-          <h1 class="font-display text-6xl sm:text-7xl lg:text-8xl text-text-main font-bold tracking-tight uppercase leading-[0.93] mb-6">
-            LOOK SHARP.<br />
-            <span class="text-gold">FEEL SHARP.</span>
+      <div class="hero-content container">
+        <div class="hero-text">
+          <p class="hero-eyebrow reveal">Authentic Greek &nbsp;•&nbsp; Corby</p>
+          <h1 class="hero-headline reveal">
+            Taste Greece.<br />Feel at Home.
           </h1>
-
-          <!-- Supporting Text -->
-          <p class="text-base sm:text-lg text-text-muted font-sans font-normal max-w-xl leading-relaxed mb-8">
-            Modern barbering and men's grooming in the heart of White Rose. From clean fades to precision beard work — crafted for confidence.
-          </p>
-
-          <!-- CTAs -->
-          <div class="flex flex-wrap items-center gap-4 mb-8 w-full sm:w-auto">
-            <a href="tel:+447537896328" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-dark hover:bg-gold text-white hover:text-dark font-sans font-bold px-7 py-4 rounded-sm text-xs uppercase tracking-[0.2em] shadow-md transition-all">
-              <!-- Lucide Phone -->
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.81-.81a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16z"/></svg>
-              <span>CALL NOW: +44 7537 896328</span>
+          <p class="hero-sub reveal">Authentic Greek food in Corby.</p>
+          <div class="hero-actions reveal">
+            <a href="tel:+447735425039" class="btn btn-hero-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              Call Now
             </a>
-            <a href="https://www.google.com/maps/search/?api=1&query=Gentlemen%27s+Corner+Barber+Shop+White+Rose+Shopping+Centre+Bus+Station+Leeds+LS11+8LU" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 border border-surface-border hover:border-dark text-text-main px-7 py-4 rounded-sm text-xs font-sans font-bold uppercase tracking-[0.2em] transition-all bg-white">
-              <!-- Lucide MapPin -->
-              <svg class="w-4 h-4 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-              <span>GET DIRECTIONS</span>
-            </a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Authentic+Greek+Corby+Oakley+Rd+Corby+NN17+1NA" target="_blank" rel="noopener" class="btn btn-hero-outline">Find Us</a>
           </div>
-
-          <!-- Location Label -->
-          <div class="flex items-center gap-2 text-xs font-sans text-text-muted tracking-[0.18em] uppercase border-t border-surface-border pt-4 w-full">
-            <!-- Lucide MapPin -->
-            <svg class="w-4 h-4 text-gold shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="12" r="3"/></svg>
-            <span>WHITE ROSE SHOPPING CENTRE BUS STATION &bull; LEEDS LS11 8LU</span>
-          </div>
-
-        </div>
-
-        <!-- Right Column: Featured Empty Barber Salon Image -->
-        <div class="lg:col-span-6 relative">
-          <div class="aspect-[4/3] rounded-sm overflow-hidden border border-surface-border shadow-2xl relative bg-white">
-            <img src="assets/empty_salon.png" alt="Gentlemen's Corner Barber Shop empty salon interior with chairs and mirrors" class="w-full h-full object-cover object-center scale-105" />
-            <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-3.5 border border-surface-border flex items-center justify-between text-xs font-sans font-bold tracking-widest text-text-main uppercase shadow-md">
-              <span class="flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-gold"></span>
-                OUR WHITE ROSE SALON BENCH
-              </span>
-              <span class="text-gold">LEEDS LS11</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ==========================================
-       03 — QUICK INFORMATION BAR
-  =========================================== -->
-  <section class="w-full bg-white border-b border-surface-border py-5 px-4 sm:px-8">
-    <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 text-center md:text-left">
-      
-      <div class="flex flex-col gap-0.5 border-r border-surface-border/60 md:border-r pr-2">
-        <span class="text-[10px] font-sans font-bold text-gold uppercase tracking-[0.2em]">BRAND</span>
-        <span class="font-display text-sm tracking-wider text-text-main uppercase">GENTLEMEN'S CORNER</span>
-      </div>
-
-      <div class="flex flex-col gap-0.5 md:border-r border-surface-border/60 pr-2">
-        <span class="text-[10px] font-sans font-bold text-gold uppercase tracking-[0.2em]">LOCATION</span>
-        <span class="font-display text-sm tracking-wider text-text-main uppercase">WHITE ROSE, LEEDS</span>
-      </div>
-
-      <div class="flex flex-col gap-0.5 border-r border-surface-border/60 pr-2">
-        <span class="text-[10px] font-sans font-bold text-gold uppercase tracking-[0.2em]">CALL BENCH</span>
-        <a href="tel:+447537896328" class="font-display text-sm tracking-wider text-text-main hover:text-gold uppercase transition-colors">+44 7537 896328</a>
-      </div>
-
-      <div class="flex flex-col gap-0.5">
-        <span class="text-[10px] font-sans font-bold text-gold uppercase tracking-[0.2em]">POSTCODE</span>
-        <span class="font-display text-sm tracking-wider text-text-main uppercase">LS11 8LU (BUS STATION)</span>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ==========================================
-       04 — GENTLEMEN'S MENU / SERVICES
-  =========================================== -->
-  <section id="services" class="w-full py-20 sm:py-28 bg-surface border-b border-surface-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8">
-
-      <!-- Section Header -->
-      <div class="flex flex-col items-center text-center mb-16">
-        <span class="text-xs font-sans font-bold tracking-[0.3em] text-gold uppercase mb-3">MEN'S GROOMING SERVICES</span>
-        <h2 class="font-display text-4xl sm:text-6xl text-text-main font-bold uppercase tracking-tight mb-4">THE GENTLEMEN'S MENU</h2>
-        <p class="text-sm sm:text-base text-text-muted max-w-lg font-sans">Precision haircutting, skin fades, beard sculpting and detailed grooming tailored to your style.</p>
-      </div>
-
-      <!-- Dev note -->
-      <!-- Add verified service names and prices here once supplied by the shop. -->
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-
-        <!-- Category 1: Haircuts & Styling -->
-        <div class="bg-white border border-surface-border p-6 sm:p-8 rounded-sm shadow-sm flex flex-col gap-6">
-          <div class="flex items-center justify-between border-b border-surface-border pb-4">
-            <h3 class="font-display text-xl text-gold tracking-widest uppercase">HAIRCUTS &amp; STYLING</h3>
-            <span class="text-xs font-sans text-text-muted tracking-wider uppercase font-semibold">01 / BARBERING</span>
-          </div>
-
-          <div class="space-y-6">
-            <!-- Service item 1 -->
-            <div class="flex items-start justify-between gap-4 border-b border-surface-border/60 pb-4">
-              <div>
-                <div class="flex items-center gap-2">
-                  <span class="text-xs font-sans text-gold font-bold">01.</span>
-                  <h4 class="font-display text-lg text-text-main tracking-wider uppercase">THE SIGNATURE HAIRCUT</h4>
-                </div>
-                <p class="text-xs text-text-muted mt-1 leading-relaxed">Precision cut, razor neck line-up &amp; styled finish.</p>
-              </div>
-              <span class="text-xs font-sans text-text-muted font-bold tracking-widest uppercase shrink-0">IN-SHOP MENU</span>
-            </div>
-
-            <!-- Service item 2 -->
-            <div class="flex items-start justify-between gap-4 border-b border-surface-border/60 pb-4">
-              <div>
-                <div class="flex items-center gap-2">
-                  <span class="text-xs font-sans text-gold font-bold">02.</span>
-                  <h4 class="font-display text-lg text-text-main tracking-wider uppercase">SKIN FADE &amp; TAPER</h4>
-                </div>
-                <p class="text-xs text-text-muted mt-1 leading-relaxed">Zero/skin blend, foil razor transition &amp; crisp perimeter detail.</p>
-              </div>
-              <span class="text-xs font-sans text-text-muted font-bold tracking-widest uppercase shrink-0">IN-SHOP MENU</span>
-            </div>
-
-            <!-- Service item 3 -->
-            <div class="flex items-start justify-between gap-4">
-              <div>
-                <div class="flex items-center gap-2">
-                  <span class="text-xs font-sans text-gold font-bold">03.</span>
-                  <h4 class="font-display text-lg text-text-main tracking-wider uppercase">RE-STYLE &amp; CONSULTATION</h4>
-                </div>
-                <p class="text-xs text-text-muted mt-1 leading-relaxed">Complete shape transformation, textured finish &amp; styling advice.</p>
-              </div>
-              <span class="text-xs font-sans text-text-muted font-bold tracking-widest uppercase shrink-0">IN-SHOP MENU</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Category 2: Beard & Detail Work -->
-        <div class="bg-white border border-surface-border p-6 sm:p-8 rounded-sm shadow-sm flex flex-col gap-6">
-          <div class="flex items-center justify-between border-b border-surface-border pb-4">
-            <h3 class="font-display text-xl text-gold tracking-widest uppercase">BEARD &amp; DETAIL WORK</h3>
-            <span class="text-xs font-sans text-text-muted tracking-wider uppercase font-semibold">02 / GROOMING</span>
-          </div>
-
-          <div class="space-y-6">
-            <!-- Service item 4 -->
-            <div class="flex items-start justify-between gap-4 border-b border-surface-border/60 pb-4">
-              <div>
-                <div class="flex items-center gap-2">
-                  <span class="text-xs font-sans text-gold font-bold">04.</span>
-                  <h4 class="font-display text-lg text-text-main tracking-wider uppercase">BEARD SCULPT &amp; SHAPE</h4>
-                </div>
-                <p class="text-xs text-text-muted mt-1 leading-relaxed">Clipper contouring, foil cheek lining, beard oil massage &amp; shape.</p>
-              </div>
-              <span class="text-xs font-sans text-text-muted font-bold tracking-widest uppercase shrink-0">IN-SHOP MENU</span>
-            </div>
-
-            <!-- Service item 5 -->
-            <div class="flex items-start justify-between gap-4 border-b border-surface-border/60 pb-4">
-              <div>
-                <div class="flex items-center gap-2">
-                  <span class="text-xs font-sans text-gold font-bold">05.</span>
-                  <h4 class="font-display text-lg text-text-main tracking-wider uppercase">LINE-UP &amp; EDGING</h4>
-                </div>
-                <p class="text-xs text-text-muted mt-1 leading-relaxed">Clean neck, temple and cheek perimeter sharpening with razor detail.</p>
-              </div>
-              <span class="text-xs font-sans text-text-muted font-bold tracking-widest uppercase shrink-0">IN-SHOP MENU</span>
-            </div>
-
-            <!-- Service item 6 -->
-            <div class="flex items-start justify-between gap-4">
-              <div>
-                <div class="flex items-center gap-2">
-                  <span class="text-xs font-sans text-gold font-bold">06.</span>
-                  <h4 class="font-display text-lg text-text-main tracking-wider uppercase">FULL HAIRCUT &amp; BEARD COMBO</h4>
-                </div>
-                <p class="text-xs text-text-muted mt-1 leading-relaxed">Complete haircut &amp; full beard sculpt in a single comprehensive session.</p>
-              </div>
-              <span class="text-xs font-sans text-text-muted font-bold tracking-widest uppercase shrink-0">IN-SHOP MENU</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Service Note -->
-      <div class="max-w-2xl mx-auto mt-10 p-5 bg-gold-light border border-gold/30 rounded-sm text-center">
-        <p class="text-xs text-text-muted leading-relaxed font-sans">
-          <strong class="text-gold font-bold uppercase tracking-wider">ASK ABOUT OUR SERVICES:</strong> Exact prices and specific services are available on our in-shop menu at White Rose. Call <a href="tel:+447537896328" class="text-text-main underline font-bold">+44 7537 896328</a> or visit our bench directly for current walk-in availability.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ==========================================
-       05 — THE CUT IS IN THE DETAIL (FEATURING CUT BACK FADE IMAGE)
-  =========================================== -->
-  <section id="detail" class="w-full py-20 sm:py-28 bg-white border-b border-surface-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-
-        <!-- Left Column: Real Haircut Photography (Image 3 - cut_back_fade.png) -->
-        <div class="lg:col-span-6 relative">
-          <div class="aspect-[4/3] rounded-sm overflow-hidden border border-surface-border shadow-xl relative bg-surface">
-            <img src="assets/cut_back_fade.png" alt="Gentlemen's Corner Barber Shop skin fade back view detail" class="w-full h-full object-cover object-center scale-105" />
-            <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-3 border border-surface-border flex items-center justify-between text-xs font-sans font-bold tracking-widest text-text-main uppercase shadow-md">
-              <span class="text-gold">PRECISION FADE DETAIL</span>
-              <span>WHITE ROSE &bull; LEEDS</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right Column: Editorial Copy & Principles -->
-        <div class="lg:col-span-6 flex flex-col gap-6">
-          <div>
-            <span class="text-xs font-sans font-bold tracking-[0.3em] text-gold uppercase mb-2 block">SIGNATURE PHILOSOPHY</span>
-            <h2 class="font-display text-4xl sm:text-5xl text-text-main font-bold uppercase tracking-tight leading-tight mb-4">
-              THE CUT IS IN THE DETAIL.
-            </h2>
-            <blockquote class="font-serif italic text-lg sm:text-xl text-gold border-l-2 border-gold pl-4 py-1 mb-4">
-              "From the first clip to the final detail, presentation matters."
-            </blockquote>
-            <p class="text-sm text-text-muted leading-relaxed font-sans">
-              At Gentlemen's Corner Barber Shop, every haircut is executed with deliberate precision. Whether you need a fresh skin fade, a sharp beard sculpt, or a clean lineup, we focus on line accuracy, balanced weight, and sharp finishes.
-            </p>
-          </div>
-
-          <!-- 3 Principles -->
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-surface-border">
-            
-            <div class="bg-surface p-4 border border-surface-border flex flex-col gap-1.5">
-              <span class="font-display text-lg text-text-main tracking-wider uppercase">PRECISION</span>
-              <p class="text-xs text-text-muted leading-relaxed">Clean lines, seamless fades, and razor-sharp perimeter edging on every service.</p>
-            </div>
-
-            <div class="bg-surface p-4 border border-surface-border flex flex-col gap-1.5">
-              <span class="font-display text-lg text-text-main tracking-wider uppercase">CLEAN DETAIL</span>
-              <p class="text-xs text-text-muted leading-relaxed">Thorough neck cleans, ear trimming, and quality product application.</p>
-            </div>
-
-            <div class="bg-surface p-4 border border-surface-border flex flex-col gap-1.5">
-              <span class="font-display text-lg text-text-main tracking-wider uppercase">PERSONAL STYLE</span>
-              <p class="text-xs text-text-muted leading-relaxed">Haircuts tailored around your head shape, hair type, and personal preference.</p>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ==========================================
-       06 — GALLERY / THE WORK SPEAKS
-  =========================================== -->
-  <section id="gallery" class="w-full py-20 sm:py-28 bg-surface border-b border-surface-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8">
-
-      <!-- Section Header -->
-      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
-        <div>
-          <span class="text-xs font-sans font-bold tracking-[0.3em] text-gold uppercase mb-2 block">REAL CLIENT WORK</span>
-          <h2 class="font-display text-4xl sm:text-6xl text-text-main font-bold uppercase tracking-tight">THE WORK SPEAKS.</h2>
-        </div>
-        <a href="tel:+447537896328" class="inline-flex items-center gap-2 text-xs font-sans font-bold tracking-[0.2em] text-gold hover:text-dark uppercase transition-colors shrink-0">
-          <span>CALL BENCH: +44 7537 896328</span>
-          <!-- Lucide ArrowRight -->
-          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-        </a>
-      </div>
-
-      <!-- Masonry Gallery Grid featuring shop photos -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-        <!-- Gallery item 1 (Image 4 - cut_side_taper.png) -->
-        <div class="group relative bg-white border border-surface-border overflow-hidden rounded-sm shadow-sm">
-          <div class="aspect-[4/3] overflow-hidden">
-            <img src="assets/cut_side_taper.png" alt="Gentlemen's Corner side taper cut view" class="w-full h-full object-cover hover-zoom" />
-          </div>
-          <div class="p-4 flex items-center justify-between border-t border-surface-border bg-white">
-            <span class="font-display text-base text-text-main tracking-wider uppercase">SIDE TAPER &amp; SHAPE</span>
-            <span class="text-[11px] font-sans font-bold text-gold tracking-widest">CUT / 01</span>
-          </div>
-        </div>
-
-        <!-- Gallery item 2 (Image 5 - cut_textured_crop.png) -->
-        <div class="group relative bg-white border border-surface-border overflow-hidden rounded-sm shadow-sm">
-          <div class="aspect-[4/3] overflow-hidden">
-            <img src="assets/cut_textured_crop.png" alt="Gentlemen's Corner textured crop haircut view" class="w-full h-full object-cover hover-zoom" />
-          </div>
-          <div class="p-4 flex items-center justify-between border-t border-surface-border bg-white">
-            <span class="font-display text-base text-text-main tracking-wider uppercase">TEXTURED CROP &amp; FADE</span>
-            <span class="text-[11px] font-sans font-bold text-gold tracking-widest">CUT / 02</span>
-          </div>
-        </div>
-
-        <!-- Gallery item 3 (Storefront) -->
-        <div class="group relative bg-white border border-surface-border overflow-hidden rounded-sm shadow-sm">
-          <div class="aspect-[4/3] overflow-hidden">
-            <img src="assets/storefront.png" alt="Gentlemen's Corner Barber Shop Storefront at White Rose Bus Station" class="w-full h-full object-cover hover-zoom" />
-          </div>
-          <div class="p-4 flex items-center justify-between border-t border-surface-border bg-white">
-            <span class="font-display text-base text-text-main tracking-wider uppercase">WHITE ROSE SHOPFRONT</span>
-            <span class="text-[11px] font-sans font-bold text-gold tracking-widest">LOCATION / 03</span>
-          </div>
-        </div>
-
-        <!-- Gallery item 4 (Image 2 - barbers_working.png) -->
-        <div class="group relative bg-white border border-surface-border overflow-hidden rounded-sm shadow-sm">
-          <div class="aspect-[4/3] overflow-hidden">
-            <img src="assets/barbers_working.png" alt="Barbers working at Gentlemen's Corner Barber Shop" class="w-full h-full object-cover hover-zoom" />
-          </div>
-          <div class="p-4 flex items-center justify-between border-t border-surface-border bg-white">
-            <span class="font-display text-base text-text-main tracking-wider uppercase">BARBERS IN ACTION</span>
-            <span class="text-[11px] font-sans font-bold text-gold tracking-widest">CRAFT / 04</span>
-          </div>
-        </div>
-
-        <!-- Gallery item 5 (Image 1 - empty_salon.png) -->
-        <div class="group relative bg-white border border-surface-border overflow-hidden rounded-sm shadow-sm">
-          <div class="aspect-[4/3] overflow-hidden">
-            <img src="assets/empty_salon.png" alt="Gentlemen's Corner salon interior with chairs &amp; mirrors" class="w-full h-full object-cover hover-zoom" />
-          </div>
-          <div class="p-4 flex items-center justify-between border-t border-surface-border bg-white">
-            <span class="font-display text-base text-text-main tracking-wider uppercase">WHITE ROSE INTERIOR</span>
-            <span class="text-[11px] font-sans font-bold text-gold tracking-widest">BENCH / 05</span>
-          </div>
-        </div>
-
-        <!-- Gallery item 6 (Image 3 - cut_back_fade.png) -->
-        <div class="group relative bg-white border border-surface-border overflow-hidden rounded-sm shadow-sm">
-          <div class="aspect-[4/3] overflow-hidden">
-            <img src="assets/cut_back_fade.png" alt="Precision fade back view" class="w-full h-full object-cover hover-zoom" />
-          </div>
-          <div class="p-4 flex items-center justify-between border-t border-surface-border bg-white">
-            <span class="font-display text-base text-text-main tracking-wider uppercase">PERIMETER BLEND</span>
-            <span class="text-[11px] font-sans font-bold text-gold tracking-widest">DETAIL / 06</span>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ==========================================
-       07 — ABOUT THE SHOP (FEATURING BARBERS WORKING IMAGE)
-  =========================================== -->
-  <section id="about" class="w-full py-20 sm:py-28 bg-white border-b border-surface-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-
-        <!-- Barbers Working Photography (Image 2 - barbers_working.png) -->
-        <div class="lg:col-span-6 relative">
-          <div class="aspect-[4/3] rounded-sm overflow-hidden border border-surface-border shadow-xl relative bg-surface">
-            <img src="assets/barbers_working.png" alt="Barbers cutting hair at Gentlemen's Corner Barber Shop" class="w-full h-full object-cover object-center hover-zoom" />
-            <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-3 border border-surface-border flex items-center justify-between text-xs font-sans font-bold tracking-widest text-text-main uppercase shadow-md">
-              <span class="text-gold">EXPERIENCED BARBERING TEAM</span>
-              <span>LEEDS &bull; LS11 8LU</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Copy -->
-        <div class="lg:col-span-6 flex flex-col gap-6">
-          <div>
-            <span class="text-xs font-sans font-bold tracking-[0.3em] text-gold uppercase mb-2 block">OUR BRAND POSITION</span>
-            <h2 class="font-display text-4xl sm:text-5xl text-text-main font-bold uppercase tracking-tight leading-tight mb-4">
-              MORE THAN A HAIRCUT.
-            </h2>
-            <p class="text-base text-text-main font-sans leading-relaxed mb-4">
-              Gentlemen's Corner Barber Shop brings men's grooming into a modern, accessible setting at White Rose in Leeds.
-            </p>
-            <p class="text-sm text-text-muted font-sans leading-relaxed">
-              A place to clean up, sharpen your style and leave feeling ready for whatever comes next. Conveniently located at the White Rose Shopping Centre Bus Station for easy access whether you're commuting or shopping.
-            </p>
-          </div>
-
-          <div class="grid grid-cols-2 gap-4 pt-4 border-t border-surface-border">
-            <div class="flex flex-col gap-1">
-              <span class="font-display text-xl text-text-main uppercase">CONVENIENT LOCATION</span>
-              <span class="text-xs text-text-muted leading-relaxed">Situated directly at the White Rose Bus Station interchange.</span>
-            </div>
-            <div class="flex flex-col gap-1">
-              <span class="font-display text-xl text-text-main uppercase">DIRECT BENCH CONTACT</span>
-              <span class="text-xs text-text-muted leading-relaxed">Call <a href="tel:+447537896328" class="text-text-main underline font-bold">+44 7537 896328</a> for walk-in updates.</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ==========================================
-       08 — BEFORE YOU VISIT
-  =========================================== -->
-  <section id="before-you-visit" class="w-full py-20 sm:py-28 bg-surface border-b border-surface-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8">
-
-      <div class="flex flex-col items-center text-center mb-16">
-        <span class="text-xs font-sans font-bold tracking-[0.3em] text-gold uppercase mb-2">PRACTICAL INFORMATION</span>
-        <h2 class="font-display text-4xl sm:text-6xl text-text-main font-bold uppercase tracking-tight">BEFORE YOU VISIT</h2>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-
-        <!-- Card 1: Location -->
-        <div class="bg-white p-6 border border-surface-border rounded-sm shadow-sm flex flex-col justify-between gap-4">
-          <div class="flex flex-col gap-3">
-            <div class="w-10 h-10 rounded-sm bg-surface border border-surface-border flex items-center justify-center text-gold">
-              <!-- Lucide MapPin -->
-              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-            </div>
-            <h3 class="font-display text-xl text-text-main tracking-wider uppercase">LOCATION</h3>
-            <p class="text-xs text-text-muted leading-relaxed font-sans">White Rose Shopping Centre Bus Station, Leeds LS11 8LU, United Kingdom.</p>
-          </div>
-          <a href="https://www.google.com/maps/search/?api=1&query=Gentlemen%27s+Corner+Barber+Shop+White+Rose+Shopping+Centre+Bus+Station+Leeds+LS11+8LU" target="_blank" rel="noopener noreferrer" class="text-xs font-sans font-bold text-gold hover:underline tracking-wider uppercase">MAP DIRECTIONS &rarr;</a>
-        </div>
-
-        <!-- Card 2: Phone -->
-        <div class="bg-white p-6 border border-surface-border rounded-sm shadow-sm flex flex-col justify-between gap-4">
-          <div class="flex flex-col gap-3">
-            <div class="w-10 h-10 rounded-sm bg-surface border border-surface-border flex items-center justify-center text-gold">
-              <!-- Lucide Phone -->
-              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.81-.81a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16z"/></svg>
-            </div>
-            <h3 class="font-display text-xl text-text-main tracking-wider uppercase">PHONE</h3>
-            <p class="text-xs text-text-muted leading-relaxed font-sans">+44 7537 896328</p>
-          </div>
-          <a href="tel:+447537896328" class="text-xs font-sans font-bold text-gold hover:underline tracking-wider uppercase">CALL DIRECT &rarr;</a>
-        </div>
-
-        <!-- Card 3: Booking -->
-        <div class="bg-white p-6 border border-surface-border rounded-sm shadow-sm flex flex-col justify-between gap-4">
-          <div class="flex flex-col gap-3">
-            <div class="w-10 h-10 rounded-sm bg-surface border border-surface-border flex items-center justify-center text-gold">
-              <!-- Lucide Calendar -->
-              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
-            </div>
-            <h3 class="font-display text-xl text-text-main tracking-wider uppercase">BOOKING &amp; WALK-INS</h3>
-            <p class="text-xs text-text-muted leading-relaxed font-sans">Contact the shop directly for the current booking / walk-in process.</p>
-          </div>
-          <span class="text-xs font-sans text-text-muted font-semibold tracking-wider uppercase">WALK-INS &amp; CALLS</span>
-        </div>
-
-        <!-- Card 4: Hours -->
-        <div class="bg-white p-6 border border-surface-border rounded-sm shadow-sm flex flex-col justify-between gap-4">
-          <div class="flex flex-col gap-3">
-            <div class="w-10 h-10 rounded-sm bg-surface border border-surface-border flex items-center justify-center text-gold">
-              <!-- Lucide Clock -->
-              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            </div>
-            <h3 class="font-display text-xl text-text-main tracking-wider uppercase">OPENING HOURS</h3>
-            <p class="text-xs text-text-muted leading-relaxed font-sans">Check the shop's current opening hours before visiting.</p>
-          </div>
-          <a href="tel:+447537896328" class="text-xs font-sans font-bold text-gold hover:underline tracking-wider uppercase">CONFIRM HOURS &rarr;</a>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ==========================================
-       09 — REVIEWS / SOCIAL PROOF PLACEHOLDER
-  =========================================== -->
-  <section class="w-full py-20 sm:py-28 bg-white border-b border-surface-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8">
-
-      <div class="flex flex-col items-center text-center mb-16">
-        <span class="text-xs font-sans font-bold tracking-[0.3em] text-gold uppercase mb-2">CLIENT FEEDBACK</span>
-        <h2 class="font-display text-4xl sm:text-6xl text-text-main font-bold uppercase tracking-tight">WHAT CLIENTS SAY</h2>
-      </div>
-
-      <!-- Dev note -->
-      <!-- Connect verified Google reviews here. -->
-
-      <div class="max-w-3xl mx-auto bg-surface border border-surface-border p-8 rounded-sm text-center flex flex-col items-center gap-4">
-        <div class="w-12 h-12 rounded-full bg-white border border-gold flex items-center justify-center text-gold shadow-sm">
-          <!-- Lucide MessageSquareQuote -->
-          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 12a2 2 0 0 0 2-2V8H8"/><path d="M14 12a2 2 0 0 0 2-2V8h-2"/></svg>
-        </div>
-        <p class="text-sm text-text-muted font-sans max-w-lg leading-relaxed">
-          Verified Google reviews will be connected here once linked. Visit our shop at White Rose Shopping Centre Bus Station or call <a href="tel:+447537896328" class="text-text-main underline font-bold">+44 7537 896328</a> to leave your feedback.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ==========================================
-       10 — INSTAGRAM / SOCIAL SECTION
-  =========================================== -->
-  <section class="w-full py-20 sm:py-28 bg-surface border-b border-surface-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8">
-
-      <div class="flex flex-col sm:flex-row items-center justify-between gap-6 mb-16">
-        <div>
-          <span class="text-xs font-sans font-bold tracking-[0.3em] text-gold uppercase mb-2 block">SOCIAL PROOF &amp; UPDATES</span>
-          <h2 class="font-display text-4xl sm:text-6xl text-text-main font-bold uppercase tracking-tight">FOLLOW THE CORNER</h2>
-        </div>
-        <a href="https://www.facebook.com/gentlemenscorner.barber/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-dark hover:bg-gold text-white hover:text-dark border border-dark px-5 py-3 rounded-sm text-xs font-sans font-bold tracking-widest uppercase transition-all shadow-sm">
-          <!-- Lucide Facebook -->
-          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-          <span>FACEBOOK PAGE</span>
-        </a>
-      </div>
-
-      <!-- 6-Image Social Grid featuring real shop photos -->
-      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-        <div class="aspect-square bg-white border border-surface-border overflow-hidden rounded-sm shadow-sm">
-          <img src="assets/cut_side_taper.png" alt="Gentlemen's Corner haircut 1" class="w-full h-full object-cover hover-zoom" />
-        </div>
-        <div class="aspect-square bg-white border border-surface-border overflow-hidden rounded-sm shadow-sm">
-          <img src="assets/cut_textured_crop.png" alt="Gentlemen's Corner haircut 2" class="w-full h-full object-cover hover-zoom" />
-        </div>
-        <div class="aspect-square bg-white border border-surface-border overflow-hidden rounded-sm shadow-sm">
-          <img src="assets/cut_back_fade.png" alt="Gentlemen's Corner haircut 3" class="w-full h-full object-cover hover-zoom" />
-        </div>
-        <div class="aspect-square bg-white border border-surface-border overflow-hidden rounded-sm shadow-sm">
-          <img src="assets/barbers_working.png" alt="Gentlemen's Corner barbers working" class="w-full h-full object-cover hover-zoom" />
-        </div>
-        <div class="aspect-square bg-white border border-surface-border overflow-hidden rounded-sm shadow-sm">
-          <img src="assets/empty_salon.png" alt="Gentlemen's Corner salon interior" class="w-full h-full object-cover hover-zoom" />
-        </div>
-        <div class="aspect-square bg-white border border-surface-border overflow-hidden rounded-sm shadow-sm">
-          <img src="assets/storefront.png" alt="Gentlemen's Corner storefront" class="w-full h-full object-cover hover-zoom" />
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ==========================================
-       11 — FIND YOUR WAY TO THE CORNER (LOCATION & MAP)
-  =========================================== -->
-  <section id="location" class="w-full py-20 sm:py-28 bg-white border-b border-surface-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8">
-
-      <div class="flex flex-col items-center text-center mb-16">
-        <span class="text-xs font-sans font-bold tracking-[0.3em] text-gold uppercase mb-2">VISIT OUR BENCH</span>
-        <h2 class="font-display text-4xl sm:text-6xl text-text-main font-bold uppercase tracking-tight">FIND YOUR WAY TO THE CORNER</h2>
-      </div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
-
-        <!-- Left: Address details -->
-        <div class="lg:col-span-5 bg-surface border border-surface-border p-8 rounded-sm flex flex-col justify-between gap-8">
-          <div>
-            <div class="w-12 h-12 rounded-sm border border-gold bg-dark flex items-center justify-center text-gold font-display text-lg mb-6 shadow-sm">
-              GC
-            </div>
-            <h3 class="font-display text-2xl text-text-main tracking-widest uppercase mb-4">GENTLEMEN'S CORNER BARBER SHOP</h3>
-            <address class="not-italic text-sm text-text-muted leading-relaxed font-sans space-y-1 mb-6">
-              <p class="text-text-main font-semibold">White Rose Shopping Centre Bus Station</p>
-              <p>Leeds</p>
-              <p>LS11 8LU</p>
-              <p>United Kingdom</p>
-            </address>
-
-            <div class="pt-6 border-t border-surface-border space-y-3">
-              <div class="flex items-center gap-3 text-sm">
-                <!-- Lucide Phone -->
-                <svg class="w-4 h-4 text-gold shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.81-.81a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16z"/></svg>
-                <a href="tel:+447537896328" class="font-sans font-bold text-text-main hover:text-gold transition-colors">+44 7537 896328</a>
-              </div>
-              <div class="flex items-center gap-3 text-sm">
-                <!-- Lucide Facebook -->
-                <svg class="w-4 h-4 text-gold shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-                <a href="https://www.facebook.com/gentlemenscorner.barber/" target="_blank" rel="noopener noreferrer" class="font-sans text-text-muted hover:text-gold transition-colors">facebook.com/gentlemenscorner.barber</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex flex-col sm:flex-row gap-3 pt-6 border-t border-surface-border">
-            <a href="tel:+447537896328" class="flex-1 inline-flex items-center justify-center gap-2 bg-dark hover:bg-gold text-white hover:text-dark font-sans font-bold text-xs uppercase tracking-widest py-3 px-4 rounded-sm transition-all shadow-md">
-              <!-- Lucide Phone -->
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.81-.81a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16z"/></svg>
-              <span>CALL NOW</span>
-            </a>
-            <a href="https://www.google.com/maps/search/?api=1&query=Gentlemen%27s+Corner+Barber+Shop+White+Rose+Shopping+Centre+Bus+Station+Leeds+LS11+8LU" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 border border-surface-border hover:border-dark text-text-main font-sans font-bold text-xs uppercase tracking-widest py-3 px-4 rounded-sm transition-all bg-white">
-              <!-- Lucide Navigation -->
-              <svg class="w-4 h-4 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
-              <span>GET DIRECTIONS</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- Right: Map -->
-        <div class="lg:col-span-7 bg-surface border border-surface-border overflow-hidden rounded-sm min-h-[350px]">
-          <iframe
-            title="Gentlemen's Corner Barber Shop Location at White Rose Shopping Centre Bus Station, Leeds"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2358.5!2d-1.5724!3d53.7588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876cd6347c6b129%3A0x8e83f23a9d9b4b0!2sWhite%20Rose%20Shopping%20Centre%20Bus%20Station!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk"
-            width="100%" height="100%" style="border:0; min-height:350px;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ==========================================
-       12 — FINAL CTA SECTION (HIGH CONTRAST DARK BANNER)
-  =========================================== -->
-  <section id="cta" class="w-full py-24 sm:py-32 bg-dark text-white relative overflow-hidden border-b border-surface-border">
-    <div class="max-w-5xl mx-auto px-4 sm:px-8 text-center relative z-10 flex flex-col items-center">
-      <span class="text-xs font-sans font-bold tracking-[0.3em] text-gold uppercase mb-4">READY FOR A CLEAN-UP?</span>
-      <h2 class="font-display text-5xl sm:text-7xl lg:text-8xl text-white font-bold uppercase tracking-tight leading-[0.95] mb-6">
-        READY FOR A CLEAN-UP?
-      </h2>
-      <p class="text-base sm:text-xl text-gray-300 font-sans max-w-xl mb-10 leading-relaxed">
-        Find Gentlemen's Corner at White Rose, Leeds. Visit our bench directly or call ahead for walk-in availability.
-      </p>
-
-      <div class="flex flex-wrap items-center justify-center gap-4">
-        <a href="tel:+447537896328" class="inline-flex items-center gap-2.5 bg-gold hover:bg-gold-hover text-dark font-sans font-bold px-8 py-4 rounded-sm text-xs uppercase tracking-[0.2em] shadow-xl transition-all">
-          <!-- Lucide Phone -->
-          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.81-.81a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16z"/></svg>
-          <span>CALL +44 7537 896328</span>
-        </a>
-        <a href="https://www.google.com/maps/search/?api=1&query=Gentlemen%27s+Corner+Barber+Shop+White+Rose+Shopping+Centre+Bus+Station+Leeds+LS11+8LU" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 border border-gray-600 hover:border-gold text-white hover:text-gold px-8 py-4 rounded-sm text-xs font-sans font-bold uppercase tracking-[0.2em] transition-all bg-dark">
-          <!-- Lucide MapPin -->
-          <svg class="w-4 h-4 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-          <span>GET DIRECTIONS</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ==========================================
-       13 — FOOTER
-  =========================================== -->
-  <footer id="contact" class="w-full bg-dark text-gray-300 border-t border-surface-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8 pt-16 pb-28 lg:pb-16">
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
-
-        <!-- Col 1: Brand -->
-        <div class="flex flex-col gap-4 lg:col-span-2">
-          <a href="#top" class="flex items-center gap-3.5 group shrink-0">
-            <div class="w-9 h-9 rounded-sm border border-gold bg-dark flex items-center justify-center text-gold font-display text-sm font-bold tracking-widest">
-              GC
-            </div>
-            <span class="font-display text-xl tracking-[0.15em] text-white uppercase leading-none">
-              GENTLEMEN'S CORNER BARBER SHOP
-            </span>
-          </a>
-          <p class="text-xs text-gray-400 leading-relaxed max-w-md font-sans">
-            Modern barbering and men's grooming in the heart of White Rose. Premium haircutting, fades, and beard sculpting at White Rose Shopping Centre Bus Station, Leeds.
-          </p>
-          <div class="flex items-center gap-4 text-xs font-sans">
-            <a href="tel:+447537896328" class="text-gold font-bold hover:underline">+44 7537 896328</a>
-            <span>&bull;</span>
-            <a href="https://www.facebook.com/gentlemenscorner.barber/" target="_blank" rel="noopener noreferrer" class="hover:text-gold transition-colors text-white">Facebook Page</a>
-          </div>
-        </div>
-
-        <!-- Col 2: Navigation -->
-        <div>
-          <h4 class="font-display text-sm text-gold tracking-widest uppercase mb-4">NAVIGATION</h4>
-          <ul class="space-y-2.5 text-xs font-sans text-gray-400">
-            <li><a href="#top" class="hover:text-gold transition-colors">Home</a></li>
-            <li><a href="#services" class="hover:text-gold transition-colors">Gentlemen's Menu</a></li>
-            <li><a href="#detail" class="hover:text-gold transition-colors">The Cuts &amp; Craft</a></li>
-            <li><a href="#about" class="hover:text-gold transition-colors">About The Shop</a></li>
-            <li><a href="#gallery" class="hover:text-gold transition-colors">Gallery</a></li>
-            <li><a href="#before-you-visit" class="hover:text-gold transition-colors">Before You Visit</a></li>
-          </ul>
-        </div>
-
-        <!-- Col 3: Location -->
-        <div>
-          <h4 class="font-display text-sm text-gold tracking-widest uppercase mb-4">LOCATION</h4>
-          <address class="not-italic text-xs font-sans text-gray-400 space-y-1.5 leading-relaxed">
-            <p class="text-white font-semibold">Gentlemen's Corner Barber Shop</p>
-            <p>White Rose Shopping Centre Bus Station</p>
-            <p>Leeds, LS11 8LU</p>
-            <p>United Kingdom</p>
+          <address class="hero-address reveal">
+            <span>+44 7735 425039</span>
+            <span class="addr-sep" aria-hidden="true">·</span>
+            <span>Oakley Rd, Corby NN17 1NA</span>
           </address>
         </div>
-
       </div>
 
-      <div class="border-t border-gray-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-sans text-gray-400">
-        <div>&copy; 2026 Gentlemen's Corner Barber Shop. All rights reserved.</div>
-        <div>White Rose Shopping Centre Bus Station &bull; Leeds LS11 8LU</div>
+      <!-- Scroll indicator -->
+      <div class="scroll-cue" aria-hidden="true">
+        <span></span>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         03 — QUICK INFO STRIP
+    ═══════════════════════════════════════ -->
+    <section class="info-strip" aria-label="Quick information">
+      <div class="info-strip-inner container">
+        <div class="info-item">
+          <span class="info-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </span>
+          <div>
+            <strong>Authentic Greek</strong>
+            <p>Greek food in Corby</p>
+          </div>
+        </div>
+        <div class="info-divider" aria-hidden="true"></div>
+        <div class="info-item">
+          <span class="info-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </span>
+          <div>
+            <strong>Visit Us</strong>
+            <p>Oakley Rd, Corby NN17 1NA</p>
+          </div>
+        </div>
+        <div class="info-divider" aria-hidden="true"></div>
+        <div class="info-item">
+          <span class="info-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </span>
+          <div>
+            <strong>Call</strong>
+            <a href="tel:+447735425039">+44 7735 425039</a>
+          </div>
+        </div>
+        <div class="info-divider" aria-hidden="true"></div>
+        <div class="info-item">
+          <span class="info-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="3,11 22,2 13,21 11,13"/></svg>
+          </span>
+          <div>
+            <strong>Location</strong>
+            <p>Corby, United Kingdom</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         04 — MENU SECTION
+    ═══════════════════════════════════════ -->
+    <section class="menu-section" id="menu" aria-labelledby="menu-heading">
+      <!-- Decorative wave -->
+      <div class="section-deco" aria-hidden="true">
+        <svg viewBox="0 0 1200 30" preserveAspectRatio="none"><path d="M0,15 C200,0 400,30 600,15 C800,0 1000,30 1200,15" stroke="#B86A4B" stroke-width="1" fill="none" opacity="0.4"/></svg>
       </div>
 
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">What We Serve</p>
+          <h2 id="menu-heading" class="section-title">The Menu</h2>
+          <p class="section-subtitle">Discover the flavours of Greece.</p>
+        </div>
+
+        <!-- Menu categories -->
+        <div class="menu-grid">
+
+          <article class="menu-category">
+            <div class="menu-cat-header">
+              <span class="menu-cat-num">01</span>
+              <h3>Gyros</h3>
+            </div>
+            <div class="menu-placeholder">
+              <!-- ✏️ EDIT: Replace with verified Authentic Greek Corby gyros menu items and prices -->
+              <p class="placeholder-note">Menu items coming soon — contact us for today's selection.</p>
+              <div class="menu-item-template" aria-hidden="true">
+                <div class="menu-item-info">
+                  <span class="menu-item-name">Dish Name</span>
+                  <span class="menu-item-desc">Description of dish with key ingredients</span>
+                </div>
+                <span class="menu-item-price">£0.00</span>
+              </div>
+              <div class="menu-item-template" aria-hidden="true">
+                <div class="menu-item-info">
+                  <span class="menu-item-name">Dish Name</span>
+                  <span class="menu-item-desc">Description of dish with key ingredients</span>
+                </div>
+                <span class="menu-item-price">£0.00</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-category">
+            <div class="menu-cat-header">
+              <span class="menu-cat-num">02</span>
+              <h3>Mains</h3>
+            </div>
+            <div class="menu-placeholder">
+              <!-- ✏️ EDIT: Replace with verified Authentic Greek Corby main course items and prices -->
+              <p class="placeholder-note">Menu items coming soon — contact us for today's selection.</p>
+              <div class="menu-item-template" aria-hidden="true">
+                <div class="menu-item-info">
+                  <span class="menu-item-name">Dish Name</span>
+                  <span class="menu-item-desc">Description of dish with key ingredients</span>
+                </div>
+                <span class="menu-item-price">£0.00</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-category">
+            <div class="menu-cat-header">
+              <span class="menu-cat-num">03</span>
+              <h3>Sides</h3>
+            </div>
+            <div class="menu-placeholder">
+              <!-- ✏️ EDIT: Replace with verified side dish items and prices -->
+              <p class="placeholder-note">Menu items coming soon — contact us for today's selection.</p>
+            </div>
+          </article>
+
+          <article class="menu-category">
+            <div class="menu-cat-header">
+              <span class="menu-cat-num">04</span>
+              <h3>Drinks</h3>
+            </div>
+            <div class="menu-placeholder">
+              <!-- ✏️ EDIT: Replace with verified drink items and prices -->
+              <p class="placeholder-note">Menu items coming soon — contact us for today's selection.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="menu-cta">
+          <p>Want to know what's on today?</p>
+          <a href="tel:+447735425039" class="btn btn-primary">Call +44 7735 425039</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         05 — MADE FOR THE TABLE
+    ═══════════════════════════════════════ -->
+    <section class="story-food" id="food-story" aria-labelledby="food-story-heading">
+      <div class="story-food-inner">
+        <div class="story-food-image">
+          <img src="images/gyros-1.png" alt="Freshly made Greek gyros wrap with fries and tzatziki" loading="lazy" />
+        </div>
+        <div class="story-food-text">
+          <p class="section-eyebrow">The Food</p>
+          <h2 id="food-story-heading">Made for<br />the Table.</h2>
+          <div class="story-line" aria-hidden="true"></div>
+          <p class="body-large">Greek food is about more than what's on the plate. It's about generous flavours, good ingredients, shared moments and the simple pleasure of eating well.</p>
+          <svg class="deco-sun" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="30" cy="30" r="10" stroke="#B86A4B" stroke-width="1.2" opacity="0.5"/>
+            <line x1="30" y1="4" x2="30" y2="12" stroke="#B86A4B" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+            <line x1="30" y1="48" x2="30" y2="56" stroke="#B86A4B" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+            <line x1="4" y1="30" x2="12" y2="30" stroke="#B86A4B" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+            <line x1="48" y1="30" x2="56" y2="30" stroke="#B86A4B" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+            <line x1="10.69" y1="10.69" x2="16.34" y2="16.34" stroke="#B86A4B" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+            <line x1="43.66" y1="43.66" x2="49.31" y2="49.31" stroke="#B86A4B" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+            <line x1="49.31" y1="10.69" x2="43.66" y2="16.34" stroke="#B86A4B" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+            <line x1="16.34" y1="43.66" x2="10.69" y2="49.31" stroke="#B86A4B" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         06 — TASTE OF GREECE IN CORBY
+    ═══════════════════════════════════════ -->
+    <section class="authenticity-section" id="authenticity" aria-labelledby="authenticity-heading">
+      <div class="container">
+        <div class="section-deco-thin" aria-hidden="true"></div>
+        <div class="authenticity-inner">
+          <p class="section-eyebrow">The Concept</p>
+          <h2 id="authenticity-heading">The Taste of Greece,<br />in Corby.</h2>
+          <div class="authenticity-text-cols">
+            <p>Authentic Greek Corby brings a taste of Greek food culture to the local community.</p>
+            <p>Whether you're stopping by for a meal, picking something up or simply looking for something different, the goal is simple: good food and a memorable experience.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         07 — FOOD GALLERY
+    ═══════════════════════════════════════ -->
+    <section class="gallery-section" id="gallery" aria-labelledby="gallery-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Visual</p>
+          <h2 id="gallery-heading">Come Hungry.</h2>
+        </div>
+      </div>
+
+      <div class="gallery-masonry" role="list">
+        <figure class="gallery-item gallery-item--tall" role="listitem">
+          <img src="images/gyros-2.png" alt="Greek gyros wrap loaded with meat, fries and tzatziki" loading="lazy" />
+          <figcaption>Flavour</figcaption>
+        </figure>
+        <figure class="gallery-item" role="listitem">
+          <img src="images/gyros-1.png" alt="Freshly made Greek gyros pita with fries" loading="lazy" />
+          <figcaption>Greece</figcaption>
+        </figure>
+        <figure class="gallery-item" role="listitem">
+          <img src="images/stall-1.jpg" alt="Authentic Greek Corby food stall interior" loading="lazy" />
+          <figcaption>Table</figcaption>
+        </figure>
+        <figure class="gallery-item gallery-item--wide" role="listitem">
+          <img src="images/stall-2.png" alt="Authentic Greek Corby stall exterior" loading="lazy" />
+          <figcaption>Corby</figcaption>
+        </figure>
+        <figure class="gallery-item" role="listitem">
+          <img src="images/coffee.png" alt="Espresso machine at Authentic Greek Corby" loading="lazy" />
+          <figcaption>Coffee</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         08 — OUR STORY
+    ═══════════════════════════════════════ -->
+    <section class="our-story" id="story" aria-labelledby="story-heading">
+      <div class="our-story-inner">
+        <div class="our-story-image">
+          <img src="images/stall-1.jpg" alt="Authentic Greek Corby food stall" loading="lazy" />
+          <div class="story-image-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="our-story-text">
+          <p class="section-eyebrow">About</p>
+          <h2 id="story-heading">Our Story</h2>
+          <div class="story-line" aria-hidden="true"></div>
+          <p>Authentic Greek Corby is a local Greek food business based on Oakley Road in Corby.</p>
+          <p>This website is built around the food, atmosphere and experience — making it easier for people in Corby to discover the business and get in touch.</p>
+          <a href="tel:+447735425039" class="btn btn-primary" style="margin-top:2rem;">Call +44 7735 425039</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         09 — WHY AUTHENTIC GREEK
+    ═══════════════════════════════════════ -->
+    <section class="why-section" id="why" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Reasons to Visit</p>
+          <h2 id="why-heading">Why Authentic Greek?</h2>
+        </div>
+        <div class="why-grid">
+          <article class="why-card">
+            <span class="why-num">01</span>
+            <h3>Greek Flavours</h3>
+            <p>A food experience inspired by Greece.</p>
+          </article>
+          <article class="why-card">
+            <span class="why-num">02</span>
+            <h3>Local to Corby</h3>
+            <p>Based on Oakley Road, right in the heart of Corby.</p>
+          </article>
+          <article class="why-card">
+            <span class="why-num">03</span>
+            <h3>A Place to Eat</h3>
+            <p>Designed around good food and an enjoyable experience.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         10 — LOCATION
+    ═══════════════════════════════════════ -->
+    <section class="location-section" id="location" aria-labelledby="location-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Where to Find Us</p>
+          <h2 id="location-heading">Find Us in Corby.</h2>
+        </div>
+        <div class="location-inner">
+          <!-- Map embed via static image / iframe -->
+          <div class="location-map">
+            <iframe
+              title="Authentic Greek Corby location map"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY&q=Authentic+Greek+Corby,Oakley+Rd,Corby+NN17+1NA"
+              width="100%"
+              height="400"
+              style="border:0; border-radius: 4px;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <!-- Fallback if maps key invalid -->
+            <a class="map-fallback-link" href="https://www.google.com/maps/search/?api=1&query=Authentic+Greek+Corby+Oakley+Rd+Corby+NN17+1NA" target="_blank" rel="noopener" aria-label="Open in Google Maps">
+              <img src="https://maps.googleapis.com/maps/api/staticmap?center=Authentic+Greek+Corby,Oakley+Rd,Corby+NN17+1NA&zoom=15&size=800x400&maptype=roadmap&markers=color:0x123B4A%7CAuthentic+Greek+Corby+Oakley+Rd+Corby&key=AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY" alt="Map showing location of Authentic Greek Corby on Oakley Road, Corby" loading="lazy" />
+            </a>
+          </div>
+
+          <div class="location-info">
+            <h3>Authentic Greek Corby</h3>
+            <address>
+              <p>Oakley Rd<br />Corby<br />NN17 1NA<br />United Kingdom</p>
+            </address>
+            <p class="location-phone"><a href="tel:+447735425039">+44 7735 425039</a></p>
+            <p class="plus-code"><small>Plus Code: F8M3+W8 Corby, United Kingdom</small></p>
+            <div class="location-btns">
+              <a href="tel:+447735425039" class="btn btn-primary">Call Now</a>
+              <a href="https://www.google.com/maps/search/?api=1&query=Authentic+Greek+Corby+Oakley+Rd+Corby+NN17+1NA" target="_blank" rel="noopener" class="btn btn-outline">Get Directions</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         11 — PLAN YOUR VISIT
+    ═══════════════════════════════════════ -->
+    <section class="visit-section" id="visit" aria-labelledby="visit-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Information</p>
+          <h2 id="visit-heading">Plan Your Visit</h2>
+        </div>
+        <div class="visit-grid">
+          <div class="visit-card">
+            <div class="visit-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3>Location</h3>
+            <address>Oakley Rd<br />Corby NN17 1NA</address>
+          </div>
+          <div class="visit-card">
+            <div class="visit-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <h3>Phone</h3>
+            <a href="tel:+447735425039">+44 7735 425039</a>
+          </div>
+          <div class="visit-card">
+            <div class="visit-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3>Hours</h3>
+            <!-- ✏️ EDIT: Add verified opening hours -->
+            <p>Check current opening hours before visiting.</p>
+            <a href="tel:+447735425039" class="text-link">Call us to confirm</a>
+          </div>
+          <div class="visit-card">
+            <div class="visit-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+            </div>
+            <h3>Ordering</h3>
+            <!-- ✏️ EDIT: Update when online ordering is confirmed -->
+            <p>Contact the business directly for current ordering options.</p>
+            <a href="tel:+447735425039" class="text-link">Call to order</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         12 — REVIEWS PLACEHOLDER
+    ═══════════════════════════════════════ -->
+    <section class="reviews-section" id="reviews" aria-labelledby="reviews-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Community</p>
+          <h2 id="reviews-heading">What People Think</h2>
+        </div>
+        <!-- ✏️ EDIT: Replace placeholders with verified Google reviews when available -->
+        <div class="reviews-grid">
+          <article class="review-card review-card--placeholder">
+            <div class="review-stars" aria-label="5 stars" role="img">
+              <span aria-hidden="true">★ ★ ★ ★ ★</span>
+            </div>
+            <blockquote>
+              <p>"Customer review will appear here once verified."</p>
+            </blockquote>
+            <footer>
+              <cite>— Customer Name</cite>
+              <time>Date</time>
+            </footer>
+          </article>
+          <article class="review-card review-card--placeholder">
+            <div class="review-stars" aria-label="5 stars" role="img">
+              <span aria-hidden="true">★ ★ ★ ★ ★</span>
+            </div>
+            <blockquote>
+              <p>"Customer review will appear here once verified."</p>
+            </blockquote>
+            <footer>
+              <cite>— Customer Name</cite>
+              <time>Date</time>
+            </footer>
+          </article>
+          <article class="review-card review-card--placeholder">
+            <div class="review-stars" aria-label="5 stars" role="img">
+              <span aria-hidden="true">★ ★ ★ ★ ★</span>
+            </div>
+            <blockquote>
+              <p>"Customer review will appear here once verified."</p>
+            </blockquote>
+            <footer>
+              <cite>— Customer Name</cite>
+              <time>Date</time>
+            </footer>
+          </article>
+        </div>
+        <p class="reviews-note">Reviews sourced from verified customers. <a href="https://www.google.com/maps/search/?api=1&query=Authentic+Greek+Corby+Oakley+Rd+Corby+NN17+1NA" target="_blank" rel="noopener">View on Google Maps.</a></p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         13 — FOLLOW THE FLAVOUR
+    ═══════════════════════════════════════ -->
+    <section class="social-section" id="social" aria-labelledby="social-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Social</p>
+          <h2 id="social-heading">Follow the Flavour</h2>
+          <!-- ✏️ EDIT: Replace with verified Instagram handle when confirmed -->
+          <p class="section-subtitle">Connect with us on social media.</p>
+        </div>
+        <!-- ✏️ EDIT: Replace placeholder grid with actual Instagram embed or images when account is verified -->
+        <div class="social-grid" aria-label="Social media gallery placeholder">
+          <div class="social-item">
+            <img src="images/gyros-2.png" alt="Greek gyros wrap" loading="lazy" />
+          </div>
+          <div class="social-item">
+            <img src="images/gyros-1.png" alt="Greek gyros pita" loading="lazy" />
+          </div>
+          <div class="social-item">
+            <img src="images/stall-1.jpg" alt="Our food stall" loading="lazy" />
+          </div>
+          <div class="social-item">
+            <img src="images/stall-2.png" alt="Authentic Greek Corby" loading="lazy" />
+          </div>
+          <div class="social-item">
+            <img src="images/coffee.png" alt="Coffee at Authentic Greek" loading="lazy" />
+          </div>
+          <div class="social-item social-item--cta">
+            <div class="social-item-inner">
+              <p>Find us online</p>
+              <a href="tel:+447735425039" class="btn btn-outline-light">Call Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         14 — FINAL HUNGRY CTA
+    ═══════════════════════════════════════ -->
+    <section class="hungry-cta" id="cta" aria-label="Call to action">
+      <div class="hungry-cta-bg" aria-hidden="true">
+        <img src="images/gyros-1.png" alt="" />
+        <div class="hungry-overlay"></div>
+      </div>
+      <div class="hungry-content container">
+        <p class="section-eyebrow hungry-eyebrow">Don't Wait</p>
+        <h2 class="hungry-headline">Hungry?</h2>
+        <p class="hungry-sub">Find Authentic Greek in Corby.</p>
+        <div class="hungry-actions">
+          <a href="tel:+447735425039" class="btn btn-hero-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            Call +44 7735 425039
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Authentic+Greek+Corby+Oakley+Rd+Corby+NN17+1NA" target="_blank" rel="noopener" class="btn btn-hero-outline">Get Directions</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════
+       15 — FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner container">
+      <div class="footer-brand">
+        <p class="footer-wordmark-primary">Authentic Greek</p>
+        <p class="footer-wordmark-location">Corby</p>
+        <address class="footer-address">
+          Oakley Rd<br />
+          Corby<br />
+          NN17 1NA<br />
+          United Kingdom
+        </address>
+        <a href="tel:+447735425039" class="footer-phone">+44 7735 425039</a>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#visit">Visit Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-actions">
+        <h4>Get in Touch</h4>
+        <a href="tel:+447735425039" class="btn btn-primary footer-btn">Call Now</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Authentic+Greek+Corby+Oakley+Rd+Corby+NN17+1NA" target="_blank" rel="noopener" class="btn btn-outline footer-btn">Get Directions</a>
+      </div>
+    </div>
+
+    <!-- Decorative wave -->
+    <div class="footer-deco" aria-hidden="true">
+      <svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,30 C150,0 300,60 450,30 C600,0 750,60 900,30 C1050,0 1200,60 1200,30" stroke="rgba(247,241,229,0.08)" stroke-width="1" fill="none"/></svg>
+    </div>
+
+    <div class="footer-bottom container">
+      <p>© 2026 Authentic Greek Corby. All rights reserved.</p>
     </div>
   </footer>
 
-
-  <!-- ==========================================
-       14 — MOBILE STICKY BAR
-  =========================================== -->
-  <div class="fixed bottom-0 left-0 right-0 z-40 lg:hidden bg-white/95 backdrop-blur-md border-t border-surface-border px-4 py-3 flex items-center gap-2">
-    <a href="tel:+447537896328" class="flex-1 inline-flex items-center justify-center gap-2 bg-dark text-white font-sans font-bold text-xs uppercase tracking-widest py-3 rounded-sm shadow-md">
-      <!-- Lucide Phone -->
-      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.81-.81a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16z"/></svg>
-      <span>CALL</span>
+  <!-- ═══════════════════════════════════════
+       16 — MOBILE BOTTOM BAR
+  ═══════════════════════════════════════ -->
+  <div class="mobile-bottom-bar" aria-label="Quick actions" role="navigation">
+    <a href="tel:+447735425039" class="mobile-bar-btn mobile-bar-btn--call">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      <span>Call</span>
     </a>
-    <a href="https://www.google.com/maps/search/?api=1&query=Gentlemen%27s+Corner+Barber+Shop+White+Rose+Shopping+Centre+Bus+Station+Leeds+LS11+8LU" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 bg-surface border border-surface-border text-text-main font-sans font-bold text-xs uppercase tracking-widest py-3 rounded-sm">
-      <!-- Lucide Navigation -->
-      <svg class="w-4 h-4 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
-      <span>DIRECTIONS</span>
-    </a>
-    <a href="#services" class="inline-flex items-center justify-center p-3 bg-surface border border-surface-border text-gold rounded-sm" aria-label="Services Menu">
-      <!-- Lucide Scissors -->
-      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" x2="8.12" y1="4" y2="15.88"/><line x1="14.47" x2="20" y1="14.47" y2="20"/><line x1="8.12" x2="12" y1="8.12" y2="12"/></svg>
+    <a href="https://www.google.com/maps/search/?api=1&query=Authentic+Greek+Corby+Oakley+Rd+Corby+NN17+1NA" target="_blank" rel="noopener" class="mobile-bar-btn mobile-bar-btn--dir">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <span>Directions</span>
     </a>
   </div>
 
-
-  <script>
-    // Mobile Menu Toggle
-    const btn = document.getElementById('mobile-menu-btn');
-    const menu = document.getElementById('mobile-menu');
-    const menuIcon = document.getElementById('menu-icon');
-    const closeIcon = document.getElementById('close-icon');
-
-    btn.addEventListener('click', () => {
-      const isOpen = !menu.classList.contains('hidden');
-      menu.classList.toggle('hidden', isOpen);
-      menuIcon.classList.toggle('hidden', !isOpen);
-      closeIcon.classList.toggle('hidden', isOpen);
-      btn.setAttribute('aria-expanded', String(!isOpen));
-    });
-
-    // Close mobile menu on nav link click
-    document.querySelectorAll('.mobile-nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        menu.classList.add('hidden');
-        menuIcon.classList.remove('hidden');
-        closeIcon.classList.add('hidden');
-        btn.setAttribute('aria-expanded', 'false');
-      });
-    });
-  </script>
-
+  <script src="script.js"></script>
 </body>
 </html>
